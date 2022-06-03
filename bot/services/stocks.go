@@ -12,7 +12,7 @@ import (
 )
 
 func GetStockfromAPI(ticker string) bool {
-	apiUrl := tools.GetDotEnvVariable("STOCKS_URL", "") + ticker
+	apiUrl := tools.GetDotEnvVariable("STOCKS_URL", "STOCKS_URL=https://stooq.com/q/l/?f=sd2t2ohlcv&h&e=csv&s=") + ticker
 	response, err := http.Get(apiUrl)
 
 	if err != nil {

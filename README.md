@@ -1,7 +1,8 @@
 # Stocks Chat
+Application to get the stocks price from an external API by a chat. 
 
 ## How the application looks
-![](C:\Users\reydw\OneDrive\Documents\Personal\Work\Jobsity\Capture.JPG)
+![](stock-chat-preview.png)
 
 ## How to run the application
 
@@ -42,6 +43,13 @@ This endpoint consumes the external API, gets the information from the csv file 
 ### Front chat
 The frontend chat is a small React application, you can run it by:
 ```
-cd .\chat\frontend
+cd .\chat\frontend\webchat
+npm install
 npm start
+
+```
+### Getting a stock price
+You have to send a message using this format /stock=stock_ticker, for instance:
+```
+/stock=aapl.us
 ```
